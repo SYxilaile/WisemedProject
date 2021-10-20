@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                               http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>wisemid-registry</artifactId>
+	<artifactId>wisemed-registry</artifactId>
 	<packaging>jar</packaging>
 
 	<!-- 配置 wisemed-parent 作为项目父级依赖 [beign] -->
