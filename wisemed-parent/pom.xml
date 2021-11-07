@@ -27,6 +27,7 @@
 		<pagehelper-spring-boot-starter.version>1.4.0</pagehelper-spring-boot-starter.version>
 		<java-jwt.version>3.18.2</java-jwt.version>
 		<springFox-boot-starter.version>3.0.0</springFox-boot-starter.version>
+		<hutool-all.version>5.7.15</hutool-all.version>
 	</properties>
 
 	<dependencies>

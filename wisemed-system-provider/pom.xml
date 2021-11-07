@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.xll.wisemed</groupId>
+	<artifactId>wisemed-system-provider</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<!-- 配置 wisemed-parent 作为项目父级依赖 [beign] -->
+	<parent>
+		<groupId>cn.xll.wisemed</groupId>
+		<artifactId>wisemed-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<!-- 配置 wisemed-parent 作为项目父级依赖 [end] -->
+
+	<dependencies>
+		<!--配置 Wisemed Data Commons 依赖 [begin] -->
+		<dependency>
+			<groupId>cn.xll.wisemed</groupId>
+			<artifactId>wisemed-data-commons</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--配置 Wisemed Data Commons 依赖 [end] -->
+	</dependencies>
+</project>

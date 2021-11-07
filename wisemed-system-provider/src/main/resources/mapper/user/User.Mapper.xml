@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xll.wisemed.generator.user.dao.UserDao">
+	<select id="findListByQuery" parameterType="User" resultMap="resultMap">
+		select
+			u.id,
+			u.name,
+			u.cellphone,
+			u.password,
+			u.identity,
+			u.status,
+		    u.createUser,
+			u.createTime,
+			u.updateUser,
+			u.updateTime
+		from
+			sys_user u
+		<where>
+			<trim suffixOverrides="and">
+				<if test="id != null and id != ''">u.id=#{id} and </if>
+				<if test="name != null and name != ''">u.name like concat('%',#{name},'%') and </if>
+				<if test="cellphone != null and cellphone != ''">u.cellphone=#{cellphone} and </if>
+				<if test="status != null and status != ''">u.status=#{status} and </if>
+				<if test="identity != null and identity != ''">u.identity=#{identity} and </if>
+			</trim>
+		</where>
+	</select>
+	
+	<resultMap id="resultMap" type="User">
+		<id property="id" javaType="java.lang.String" column="id"/>
+		<result property="name" javaType="java.lang.String" column="name"/>
+		<result property="cellphone" javaType="java.lang.String" column="cellphone"/>
+		<result property="password" javaType="java.lang.String" column="password"/>
+		<result property="identity" javaType="java.lang.String" column="identity"/>
+		<result property="status" javaType="java.lang.String" column="status"/>
+		<result property="createUser" javaType="java.lang.String" column="createUser"/>
+		<result property="createTime" javaType="java.util.Date" column="createTime"/>
+		<result property="updateUser" javaType="java.lang.String" column="updateUser"/>
+		<result property="updateTime" javaType="java.util.Date" column="updateTime"/>
+	</resultMap>
+</mapper>

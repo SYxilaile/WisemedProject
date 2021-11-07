@@ -51,5 +51,28 @@
 		</dependency>
 
 		<!-- 配置 SpringFox Boot Starter 依赖 [end] -->
+
+		<!-- 配置 Spring Boot Starter Data Redis 依赖 [begin] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<!-- 配置 Spring Boot Starter Data Redis 依赖 [end] -->
+
+		<!-- 配置 Hutool All 依赖 [begin] -->
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool-all.version}</version>
+		</dependency>
+		<!-- 配置 Hutool All 依赖 [end] -->
+
+		<!--配置  Spring Boot Starter Freemarker 依赖 [begin] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+		<!--配置  Spring Boot Starter Freemarker 依赖 [end] -->
 	</dependencies>
 </project>
